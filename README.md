@@ -14,7 +14,7 @@ usage:
 
 commands;
   backup                               (copies all 4 data files +.taskrc to a dated-taskdata.gz (or .zip) file)
-  check                                (tests taskdata files for common errors, data format compliance, dupe-uuids, etc)
+  check                                (tests data files for errors, format compliance, dupe-uuids, etc)
   < filter > archive < target-file >   (matching tasks removed from completed.data and appended to target-file)
   < filter > move < target-file >      (matching tasks removed from pending.data and appended to target-file)
   < filter > delete                    (deletes matching tasks from completed.data)
