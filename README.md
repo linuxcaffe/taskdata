@@ -18,7 +18,7 @@ commands;
   < filter > archive < target-file >   (matching tasks removed from completed.data and appended to target-file)
   < filter > move < target-file >      (matching tasks removed from pending.data and appended to target-file)
   < filter > delete                    (deletes matching tasks from completed.data)
-  < sort-field(s) > sort               (sort lines in pending.data, according to task sort-field(s))
+  sort < sort-field(s) >               (sort lines in pending.data, according to task sort-field(s))
   </pre>
   
   taskdata should generate ample feedback and confirmational prompts (y/n)
