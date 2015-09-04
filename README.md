@@ -8,14 +8,14 @@ Taskwarrior (http://taskwarrior.org) users have long asked questions about ID#s 
 but STILL I'd like go ahead and describe this imaginary program as though the data-integrity and task-sync/undo issues were all taken care of. For the purposes of discussion, please put those concerns on hold, and imagine;
 
 <pre>
-taskdata [option] \<filter\> \<command\>
+taskdata < filter > command
 
 usage:
 
 options;
-  -a \<filter\> \>file         (archives matching from completed.data to STDOUT or pipe to file)
-  -d \<filter\>          (deletes matching tasks from completed.data)
-  -s \<sort-field(s)\>   (sort lines in pending.date according to data field(s))
+  < filter > archive       (archives matching from completed.data to STDOUT or pipe to file)
+  < filter > delete        (deletes matching tasks from completed.data)
+  < sort-field(s) > sort   (sort lines in pending.date according to data field(s))
   
 </pre>
 
