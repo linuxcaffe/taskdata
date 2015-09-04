@@ -13,9 +13,9 @@ usage:
   taskdata < filter > command
 
 commands;
-  < filter > archive       (archives matching from completed.data to STDOUT or pipe to file)
-  < filter > delete        (deletes matching tasks from completed.data)
-  < sort-field(s) > sort   (sort lines in pending.date according to data field(s))
+  < filter > move < target-file >   (matching tasks removed from completed.data, appended to target-file)
+  < filter > delete                 (deletes matching tasks from completed.data)
+  < sort-field(s) > sort            (sort lines in pending.date according to task sort-field(s))
   </pre>
 
 
