@@ -10,7 +10,7 @@ but STILL I'd like go ahead and describe this imaginary program as though the da
 <pre>
 usage:
 
-  taskdata < filter > command
+  taskdata [filter] command
 
 commands;
   backup                               (copies all 4 taskdate files to a dated-taskdata.gz (or .zip) file)
