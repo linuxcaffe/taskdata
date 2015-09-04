@@ -13,10 +13,13 @@ usage:
   taskdata < filter > command
 
 commands;
-  < filter > move < target-file >   (matching tasks removed from completed.data, appended to target-file)
+  < filter > move < target-file >   (matching tasks removed from completed,data and/or pending.data, 
+                                       appended to target-file)
   < filter > delete                 (deletes matching tasks from completed.data)
-  < sort-field(s) > sort            (sort lines in pending.date according to task sort-field(s))
+  < sort-field(s) > sort            (sort lines in pending.data, according to task sort-field(s))
   </pre>
+  
+  taskdata should generate ample feedback and confirmational prompts (y/n)
 
 
 
