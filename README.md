@@ -30,7 +30,10 @@ config options (set in script);
   default_sort=field1-,field2+      (sets default sort order, defined like tasks report.X.sort= config)
 </pre>
   
-  taskdata should generate ample feedback and confirmational prompts (y/n)
+  The taskdata command should;
+- generate ample feedback and confirmational prompts (y/n)
+- always check file format integrity and abort without changes if any errors are found
+- add or remove entries to backlog.date and undo.data, to reconcile the changes.
 
 
 
