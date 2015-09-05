@@ -21,7 +21,7 @@ commands;
   < filter > delete                 (deletes matching tasks from completed.data)
   sort [sort-field(s)]              (sort lines in pending.data, according to task sort-field(s))
   
-config options (set in script);
+config options (set in script or config file);
   backup_required=yes/no            (whether a date.taskdata.gz file must be present, before proceding)
   backup_frequency=N                (sets the maximum number of days between backups (0 = every time, auto)
   backup_keep=N                     (sets the number of backup files to keep, (0 = all)
@@ -34,4 +34,4 @@ config options (set in script);
   The taskdata command should;
 - generate ample feedback and confirmational prompts (y/n)
 - always check file format integrity and abort without changes if any errors are found
-- add or remove entries to backlog.date and undo.data, to reconcile the changes.
+- add or remove entries to backlog.data and undo.data, to reconcile the changes.
