@@ -28,7 +28,7 @@ config options (set in script or config file);
   backup_target_dir=~/path          (sets the backup folder (filename is a fixed YYYY-MM-DD_taskdata.gz)
   archive_target=~/path/file.data   (sets default archive target file)
   move_target=~/path/file.data      (sets default move target file)
-  default_sort=field1-,field2+      (sets default sort order, defined like tasks report.X.sort= config)
+  sort_default=field1-,field2+      (sets default sort order, defined like tasks report.X.sort= config)
 </pre>
   
   The taskdata command should;
