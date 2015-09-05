@@ -22,7 +22,6 @@ commands;
   sort [sort-field(s)]              (sort lines in pending.data, according to task sort-field(s))
   
 config options (set in script);
-  
   backup_required=yes/no            (whether a date.taskdata.gz file must be present, before proceding)
   backup_frequency=N                (sets the maximum number of days between backups (0 = every time, auto)
   backup_keep=N                     (sets the number of backup files to keep, (0 = all)
