@@ -27,7 +27,7 @@ config options (set in script);
   backup_frequency=N                (sets the maximum number of days between backups (0 = every time, auto)
   archive_target=~/path/file.data   (sets default archive target file)
   move_target=~/path/file.data      (sets default move target file)
-  default_sort=field1-, field2+     (sets default sort order, defined like tasks report.X.sort= config)
+  default_sort=field1-,field2+      (sets default sort order, defined like tasks report.X.sort= config)
 </pre>
   
   taskdata should generate ample feedback and confirmational prompts (y/n)
