@@ -13,7 +13,7 @@ usage:
   taskdata [filter] command
 
 commands;
-  backup                            (copies all 4 data files +.taskrc to a dated-taskdata.gz (or .zip) file)
+  backup [target-file]              (copies all 4 data files +.taskrc to a dated-taskdata.gz (or .zip) file)
   revert [source-file]              (overwrites taskdata files with dated-taskdate.gz (defaults to newest))
   check [target-file]               (tests data files for errors, format compliance, dupe-uuids, etc)
   < filter > archive [target-file]  (matching tasks removed from completed.data and appended to target-file)
@@ -25,6 +25,7 @@ config options (set in script);
   
   backup_required=yes/no            (whether a date.taskdata.gz file must be present, before proceding)
   backup_frequency=N                (sets the maximum number of days between backups (0 = every time, auto)
+  backup_target_dir=~/path          (sets the backup folder (filename is a fixed YYYY-MM-DD_taskdata.gz)
   archive_target=~/path/file.data   (sets default archive target file)
   move_target=~/path/file.data      (sets default move target file)
   default_sort=field1-,field2+      (sets default sort order, defined like tasks report.X.sort= config)
@@ -34,6 +35,3 @@ config options (set in script);
 - generate ample feedback and confirmational prompts (y/n)
 - always check file format integrity and abort without changes if any errors are found
 - add or remove entries to backlog.date and undo.data, to reconcile the changes.
-
-
-
