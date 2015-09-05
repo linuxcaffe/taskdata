@@ -25,6 +25,7 @@ config options (set in script);
   
   backup_required=yes/no            (whether a date.taskdata.gz file must be present, before proceding)
   backup_frequency=N                (sets the maximum number of days between backups (0 = every time, auto)
+  backup_keep=N                     (sets the number of backup files to keep, (0 = all)
   backup_target_dir=~/path          (sets the backup folder (filename is a fixed YYYY-MM-DD_taskdata.gz)
   archive_target=~/path/file.data   (sets default archive target file)
   move_target=~/path/file.data      (sets default move target file)
